@@ -5,3 +5,16 @@ body{
 h1{
     color: orange;
     font-size: 24;
+}
+
+hr{
+    color: yellow;
+    height: 10px;
+    width: 50%;
+}
+
+p{
+    font-family: 'Times New Roman'
+    font-size: 16px;
+    font-weight: bold;
+}
