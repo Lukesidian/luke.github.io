@@ -3,35 +3,78 @@
 <head>
     <meta charset="UTF-8" />
     <title>October 24, 2023</title>
-    <meta name=""keywords" content = "art, design, UNC">
-    <link rel="stylesheet" type="text/css" href="default.css"
+    <meta name="keywords" content="art, design, UNC">
+    <style>
+        .textbox {
+            position: absolute;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
+            background-color: rgba(249, 249, 249, 0.8); /* Use RGBA for transparency */
+        }
+
+        #toptext {
+            position: absolute;
+            top: 20px;
+            left: 50%; 
+            transform: translateX(-50%);
+            font-size: 24px; 
+            font-weight: bold; 
+            text-align: center; 
+        }
+
+        .image-box {
+            position: absolute;
+            top: 275px;
+            left: 100px;
+        }
+
+        .content-box {
+            position: absolute;
+            top: 350px;
+            left: 50px;
+            width: 350px;
+        }
+        
+        /* Styling for transparent content boxes */
+        .content-box .textbox {
+            background-color: rgba(249, 249, 249, 0.7); /* Adjust opacity here */
+        }
+    </style>
 </head>
 <body>
-    <div id="toptext">
-    <p><b>Differences Between the Fender Stratocaster and Fender Telecaster</b></p>
-    <p> </p>
-        <img src="graphics/guitars.png"
-    <p> </p>       
-    <p><b>1. Bridge</b></p>
-    <p> </p>
-    <p>The Strat has a floating bridge, meaning the pitch of a note can be manipulated using the tremolo bar.</p>
-    <p>The Tele has a set bridge, meaning there is no ability to manipulate pitch with the bridge after the note is played.</p>
-    <p> </p>
-    <p><b>2. Body</b></p>
-    <p> </p>
-    <p>The Strat has a contoured body with horns on either side.</p>
-    <p>The Tele has zero contours and only has one horn on the bottom.</p>
-    <p> </p>
-    <p><b>3. Electronics</b></p>
-    <p> </p>
-    <p>The Strat has 3 single coil pickups, a 5-way switch, a volume knob, and two tone knobs.</p>
-    <p>The Tele only has two pickups, a 3-way switch, and one volume and one tone knob.</p>
-    <p> </p>
-    <p><b>4. Headstock</b></p>
-    <p> </p>
-    <p>The Strat has a large headstock.</p>
-    <p>The Tele has a much smaller headstock.</p>
-        
+    <div id="toptext" class="textbox">
+        Differences Between the Fender Stratocaster and Fender Telecaster
+    </div>
 
+    <div class="image-box">
+        <img src="graphics/guitars.png" alt="Guitars Image">
+    </div>
+
+    <div class="content-box">
+        <div class="textbox" style="bottom: 0px; left: 50px;">
+            <b>1. Bridge</b>
+            <p>The Strat has a floating bridge, meaning the pitch of a note can be manipulated using the tremolo bar.</p>
+            <p>The Tele has a set bridge, meaning there is no ability to manipulate pitch with the bridge after the note is played.</p>
+        </div>
+
+        <div class="textbox" style="top: 210px; left: 525px;">
+            <b>2. Body</b>
+            <p>The Strat has a contoured body with horns on either side.</p>
+            <p>The Tele has zero contours and only has one horn on the bottom.</p>
+        </div>
+
+        <div class="textbox" style="top: 600px; left: 120px;">
+            <b>3. Electronics</b>
+            <p>The Strat has 3 single coil pickups, a 5-way switch, a volume knob, and two tone knobs.</p>
+            <p>The Tele only has two pickups, a 3-way switch, and one volume and one tone knob.</p>
+        </div>
+
+        <div class="textbox" style="top: 480px; left: 1075px;">
+            <b>4. Headstock</b>
+            <p>The Strat has a large headstock.</p>
+            <p>The Tele has a much smaller headstock.</p>
+        </div>
+    </div>
 </body>
 </html>
